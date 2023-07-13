@@ -6,6 +6,7 @@ function Apropos(){
     return (
         <section>
             <Header /> 
+            <h1>wawa</h1>
             <Footer />
         </section>
     )

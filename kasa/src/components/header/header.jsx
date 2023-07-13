@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Logo from './image/Logo.png'
 
 function Header(){
@@ -7,12 +8,13 @@ function Header(){
             <img src={Logo} alt="Logo de kasa" />
             <nav className='header__nav'>
                 <li>
-                    <a href="/home.jsx" className='header__acceuil'>Acceuil</a>
+                    <Link to="/" className='header__acceuil'>Acceuil</Link>
                 </li>
                 <li>
-                    <a href="/apropos.jsx" className='header__apropos'>À propos</a>
+                    <Link to="/Apropos" className='header__apropos'>À propos</Link>
                 </li>
             </nav>
+            
         </header>
         
     )
