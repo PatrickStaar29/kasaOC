@@ -2,7 +2,7 @@
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
 
-function Home(){
+function Apropos(){
     return (
         <section>
             <Header /> 
@@ -10,4 +10,4 @@ function Home(){
         </section>
     )
 }
-export default Home
+export default Apropos

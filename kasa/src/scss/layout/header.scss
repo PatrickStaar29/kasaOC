@@ -10,8 +10,13 @@
         gap: 57px;
     }
     nav, a{
-        text-decoration: none;
         color: #FF6060;
         font-size: 24px;
+    }
+    &__acceuil{
+        text-decoration: underline;
+    }
+    &__apropos{
+        text-decoration: underline;
     }
 }
