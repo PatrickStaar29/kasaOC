@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import Logo from './image/Logo.png'
 
 function Header(){
-
+          
     return (
         <header className='header'>
             <img src={Logo} alt="Logo de kasa" />
@@ -18,6 +18,9 @@ function Header(){
         </header>
         
     )
+    const aproposLink = document.querySelector('.header__apropos');
+    aproposLink.style.textDecoration = 'none';
+        
 }
 
 export default Header

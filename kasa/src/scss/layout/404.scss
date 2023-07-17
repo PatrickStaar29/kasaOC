@@ -1,0 +1,29 @@
+.Probl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 139px;
+    margin: 139px 0;
+    &__404{
+        display: flex;
+        font-family: 'Montserrat';
+        font-size: 288px;
+        font-weight: 700;
+        height: 263px;
+        align-items: center;
+        justify-content: center;
+        color: #FF6060;
+    }
+    &__message{
+        font-size: 36px;
+        font-weight: 500;
+        font-family: 'Montserrat';
+        color: #FF6060;
+    }
+    &__retour{
+        color: #ff6060;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: 'Montserrat';
+    }
+}
