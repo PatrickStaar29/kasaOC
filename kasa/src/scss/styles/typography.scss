@@ -3,3 +3,26 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
+.menu {
+    margin-bottom: 10px;
+  
+    &.open {
+      .menu-content {
+        display: block;
+      }
+    }
+  
+    .menu-header {
+      cursor: pointer;
+      background-color: lightgray;
+      padding: 5px;
+    }
+  
+    .menu-content {
+      display: none;
+      background-color: white;
+      padding: 10px;
+    }
+  }
+  

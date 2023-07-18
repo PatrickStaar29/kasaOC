@@ -7,7 +7,7 @@ import Probl from "../components/404/probl"
 
 function Error(){
     return (
-        <section>
+        <section className="body">
             <Header /> 
             <Probl/>
             <Footer />

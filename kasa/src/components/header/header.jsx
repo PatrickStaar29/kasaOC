@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import Logo from './image/Logo.png'
 
+
+
 function Header(){
           
     return (
@@ -18,8 +20,7 @@ function Header(){
         </header>
         
     )
-    const aproposLink = document.querySelector('.header__apropos');
-    aproposLink.style.textDecoration = 'none';
+    
         
 }
 

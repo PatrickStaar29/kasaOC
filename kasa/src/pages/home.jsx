@@ -6,7 +6,7 @@ import Footer from "../components/footer/footer"
 
 function Home(){
     return (
-        <section>
+        <section className="body">
             <Header /> 
             <Footer />
         </section>

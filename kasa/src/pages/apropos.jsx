@@ -1,12 +1,13 @@
 // Import de chaque composant dont tu as besoin
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
+import Collapse from "../components/collapse/collapse"
 
 function Apropos(){
     return (
-        <section>
+        <section className="body">
             <Header /> 
-            <h1>wawa</h1>
+            <Collapse/>
             <Footer />
         </section>
     )
