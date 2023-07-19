@@ -2,15 +2,15 @@
 @import './pages/home.scss';
 @import './pages/404.scss';
 
-// Layout
-@import './layout/header.scss';
-@import './layout/footer.scss';
-
+// Components
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/banner.scss';
+@import './components/collapse.scss';
 // Styles
 
 @import './styles/reset.scss';
 @import './styles/typography.scss';
 
-// Components
 
-@import './components/collapse.scss';
+
