@@ -3,17 +3,23 @@ import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
 import Banner from "../components/banner/banner"
 import Imagebanner from "../components/banner/bannerimg/Home.png"
+import Card from "../components/card/card"
 
 
 function Home(){
     return (
-        <section className="body">
+        <>
+        {/* <section className="body"> */}
             <Header /> 
             <main>
-                <Banner image={Imagebanner}/>
+                <Banner image={Imagebanner} text="Chez vous, partout et ailleurs"/>
+                <section className="grid">
+                    <Card/>
+                </section>
             </main>
             <Footer />
-        </section>
+        {/* </section> */}
+        </>
     )
 }
 export default Home

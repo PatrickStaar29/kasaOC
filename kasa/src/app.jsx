@@ -4,6 +4,7 @@ import './scss/style.scss'
 import Home from './pages/home'
 import Apropos from './pages/apropos'
 import Error from './pages/404'
+import Logement from './pages/logement'
 
 
 function App(){
@@ -13,6 +14,7 @@ function App(){
                 <Route path="/" element={<Home />} />
                 <Route path="/apropos" element={<Apropos />} />
                 <Route path="/404" element={<Error />} />
+                <Route path="/logement" element={<Logement/>}/>
             </Routes>
         </Router>
     )

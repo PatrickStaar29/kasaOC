@@ -14,9 +14,12 @@
         font-size: 24px;
     }
     &__acceuil{
-        text-decoration: underline;
+        text-decoration: none;
     }
     &__apropos{
-        text-decoration: underline;
+        text-decoration: none;
+    }
+    &__active{
+        text-decoration: underline; 
     }
 }
