@@ -4,6 +4,8 @@ import Footer from "../components/footer/footer"
 import Banner from "../components/banner/banner"
 import Imagebanner from "../components/banner/bannerimg/Home.png"
 import Card from "../components/card/card"
+import Tabl from "../components/data/data"
+
 
 
 function Home(){
@@ -14,7 +16,9 @@ function Home(){
             <main>
                 <Banner image={Imagebanner} text="Chez vous, partout et ailleurs"/>
                 <section className="grid">
-                    <Card/>
+                    {Tabl.map((item) => (
+                        <Card key={item.id} data={item} />
+                    ))}
                 </section>
             </main>
             <Footer />

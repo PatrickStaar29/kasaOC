@@ -1,16 +1,14 @@
-import Tabl from "../data/data"
+import { Link } from "react-router-dom"
 
-function Card(){
+function Card({data}){
     return (
-        <>
-            {Tabl.map((item, index) => (
-                <div key={index}className="grid__card">
-                    <img src={item.cover} alt="" className="grid__img"/>
-                    <span className="grid__filtre"></span>
-                    <h2 className="grid__texte">{item.title}</h2>
-                </div>
-            ))}
-        </>
+        <Link to={`/logement/${data.id}`}>
+            <div className="grid__card">
+                <img src={data.cover} alt="" className="grid__img"/>
+                <span className="grid__filtre"></span>
+                <h2 className="grid__texte">{data.title}</h2>
+            </div>
+        </Link>
     )
 }
 export default Card
