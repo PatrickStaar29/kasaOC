@@ -1,0 +1,28 @@
+.equipement{
+    display: flex;
+    flex-direction: column;
+    margin: 38px 0;
+    &__titre {
+        background: #FF6060;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 35px;
+        align-items: center;
+        font-size: 34px;
+        border-radius: 5px;
+        padding: 10px 20px 10px 15px;
+        font-family: 'Montserrat';
+        color: white;
+    }
+    &__contenu{
+        position: relative;
+        background: #F6F6F6;
+        transform: translateY(-5px);
+        z-index: -1;
+        padding: 25px 20px 20px 20px;
+        border-radius: 5px;
+        color: #FF6060;
+    }
+    
+}

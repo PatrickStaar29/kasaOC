@@ -1,0 +1,18 @@
+.logement{
+    &__titre{
+        color: #FF6060;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%; /* 51.336px */
+    }
+    &__location{
+        color: #FF6060;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%; /* 25.668px */
+    }
+}
