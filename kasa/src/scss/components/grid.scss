@@ -10,12 +10,14 @@
     &__card{
         display: flex;
         align-items: flex-end;
+        position: relative;
         height: 340px;
         width: 100%;
         border-radius: 10px;
     }
     &__img{
         object-fit: cover;
+        position: relative;
         height: 340px;
         width: 100%;
         border-radius: 10px;
@@ -23,7 +25,7 @@
     &__filtre{
         position: absolute;
         height: 340px;
-        width: 340px;
+        width: 100%;
         border-radius: 10px;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
     }

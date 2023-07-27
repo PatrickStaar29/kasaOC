@@ -1,0 +1,16 @@
+.tag{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    &__titre{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 30px;
+        height: 25px;
+        background: #ff6060;
+        color: white;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+}

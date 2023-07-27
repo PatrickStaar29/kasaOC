@@ -1,7 +1,8 @@
-.equipement{
+.collapse-logement{
     display: flex;
     flex-direction: column;
-    margin: 38px 0;
+    margin-bottom: 50px;
+    width: 100%;
     &__titre {
         background: #FF6060;
         display: flex;
