@@ -1,4 +1,6 @@
 .logement{
+    display: flex;
+    justify-content: space-between;
     margin-top: 30px;
     &__titre{
         color: #FF6060;
@@ -18,5 +20,18 @@
     &__collapse{
         display: flex;
         gap: 76px;
+    }
+}
+
+.logement-host{
+    display: flex;
+    justify-content: flex-start;
+    &__info{
+        display: flex;
+    }
+    &__image{
+        width: 64px;
+        height: 64px;
+        border-radius: 64px;
     }
 }

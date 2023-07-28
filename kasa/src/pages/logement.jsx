@@ -6,6 +6,10 @@ import Footer from "../components/footer/footer"
 import Collapselogement from "../components/collapse-logement/collapse-logement";
 import Tag from "../components/tag/tag";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+
+
 function Logement(){
     const { id } = useParams(); // Récupérer l'ID à partir des paramètres d'URL
 
@@ -31,9 +35,19 @@ function Logement(){
                 ))}
               </div>
             </div>
-              <h2>Host: {hostData.name}</h2>
-              <img src={hostData.picture} alt={hostData.name} />
-            <div>
+            <div className="logement-host">
+              <div className="logement-host__info">
+                <h2 >{hostData.name}</h2>
+                <img src={hostData.picture} alt={hostData.name} className="logement-host__image"/>
+                
+              </div>
+              <div>
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
             </div>
           </div>
           <div className="logement__collapse">

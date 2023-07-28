@@ -1,34 +1,38 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
-// Assurez-vous que le chemin est correct pour accéder à votre fichier data.js
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-function Collapselogement( {titre, contenu}) {
-  const { id } = useParams();
-
-  
-  // Recherchez l'objet correspondant à l'ID dans le tableau Tabl
-
-
+function Collapselogement({ titre, contenu }) {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const toggleCollapse = () => {
-    setIsCollapsed(!isCollapsed)
-  }
+    setIsCollapsed(!isCollapsed);
+  };
 
   return (
-    <div className="collapse-logement">
-        <div className="collapse-logement__titre" onClick={toggleCollapse}>
-           <h2>{titre}</h2>
-           <span>V</span>
-        </div>
-        {!isCollapsed && (
-        <div className="collapse-logement__contenu">
-          {contenu.map((contenu, index) => (
-            <h3 key={index}>{contenu}</h3>
-          ))}
-        </div>)}
+    <div className={`collapse ${isCollapsed ? "" : "open"}`}>
+      <div className="collapse__titre" onClick={toggleCollapse}>
+        <h2>{titre}</h2>
+        <FontAwesomeIcon
+          icon={faChevronUp}
+          className={`icon ${isCollapsed ? "" : "rotate"}`}
+        />
+      </div>
+      <div
+        className="collapse__contenu"
+        style={{
+          animation: isCollapsed ? "" : "loadContent 0.5s ease-in-out",
+          // Vous pouvez ajuster la hauteur maximale en fonction de vos besoins.
+          // Assurez-vous que c'est suffisamment grand pour contenir tout le contenu.
+          maxHeight: isCollapsed ? "0" : "500px",
+        }}
+      >
+        {contenu.map((contenu, index) => (
+          <h3 key={index}>{contenu}</h3>
+        ))}
+      </div>
     </div>
-  )
+  );
 }
 
 export default Collapselogement;
