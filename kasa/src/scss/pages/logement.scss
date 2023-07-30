@@ -25,13 +25,29 @@
 
 .logement-host{
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 25px;
     &__info{
         display: flex;
+        gap: 10px;
+        align-items: center;
+        color: #ff6060;
+        font-size: 18px;
+        justify-content: flex-end;
     }
     &__image{
         width: 64px;
         height: 64px;
         border-radius: 64px;
+    }
+    &__star{
+        display: flex;
+        font-size: 24px;
+        color: #E3E3E3;
+        gap: 15px;
+    }
+    &__star-actif{
+        color: #FF6060;
     }
 }

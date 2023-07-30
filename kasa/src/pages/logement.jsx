@@ -10,6 +10,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 
+const Rating = ({ stars }) => {
+  const maxStars = 5;
+  return (
+    <div className="logement-host__star">
+      {[...Array(maxStars)].map((_, index) => (
+        <FontAwesomeIcon
+          key={index}
+          icon={faStar}
+          className={index < stars ? 'logement-host__star-actif' : ''}
+        />
+      ))}
+    </div>
+  );
+};
+
+
+
 function Logement(){
     const { id } = useParams(); // Récupérer l'ID à partir des paramètres d'URL
 
@@ -41,12 +58,8 @@ function Logement(){
                 <img src={hostData.picture} alt={hostData.name} className="logement-host__image"/>
                 
               </div>
-              <div>
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
+              <div className="logement-host__star">
+                <Rating stars={cardData.rating} />
               </div>
             </div>
           </div>
