@@ -8,7 +8,7 @@ import Tag from "../components/tag/tag";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-
+import Carrousel from "../components/carrousel/carrousel";
 
 const Rating = ({ stars }) => {
   const maxStars = 5;
@@ -22,8 +22,8 @@ const Rating = ({ stars }) => {
         />
       ))}
     </div>
-  );
-};
+  )
+}
 
 
 
@@ -39,7 +39,7 @@ function Logement(){
     <>
         <Header/>
         <div>
-          <img src={cardData.cover} alt="" className="carrousel-test"/>
+          <Carrousel/>
           <div className="logement">
             <div>
               <div >
