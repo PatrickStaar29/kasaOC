@@ -18,14 +18,3 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-body{
-    display: flex;
-    max-width: 1440px;
-    flex-direction: column;
-    align-items: stretch;
-    margin: auto;
-}
-
-#root{
-	margin: 0 100px;
-}

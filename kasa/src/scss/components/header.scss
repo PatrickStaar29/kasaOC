@@ -23,3 +23,19 @@
         text-decoration: underline; 
     }
 }
+
+@media screen and (max-width: 768px) {
+    .header{
+        margin: 20px 0 25px 0;
+        & img{
+            width: 145px;
+        }
+        &__nav{
+            gap: 26px;
+        }
+        nav, a{
+            font-size: 12px;
+        }
+
+    }
+  }

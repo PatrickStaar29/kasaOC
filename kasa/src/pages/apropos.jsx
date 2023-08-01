@@ -4,7 +4,6 @@ import Footer from "../components/footer/footer"
 import Collapse from "../components/collapse/collapse"
 import Banner from "../components/banner/banner"
 import Imagebanner from "../components/banner/bannerimg/apropos.png"
-import Collapselogement from "../components/collapse-logement/collapse-logement"
 
 function Apropos(){
     const data = [
@@ -38,19 +37,19 @@ function Apropos(){
     ]
 
     return (
-        <section className="body">
+        <>
             <Header />
             <main>
                 <Banner image={Imagebanner}/>
                 <section className="collapse__apropos">
-                    <Collapselogement titre={data[0].titre} contenu={[data[0].texte]}/>
-                    <Collapselogement titre={data[1].titre} contenu={[data[1].texte]}/>
-                    <Collapselogement titre={data[2].titre} contenu={[data[2].texte]}/>
-                    <Collapselogement titre={data[3].titre} contenu={[data[3].texte]}/>
+                    <Collapse titre={data[0].titre} contenu={[data[0].texte]}/>
+                    <Collapse titre={data[1].titre} contenu={[data[1].texte]}/>
+                    <Collapse titre={data[2].titre} contenu={[data[2].texte]}/>
+                    <Collapse titre={data[3].titre} contenu={[data[3].texte]}/>
                 </section>
             </main> 
             <Footer />
-        </section>
+        </>
     )
 }
 export default Apropos

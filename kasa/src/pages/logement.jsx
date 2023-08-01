@@ -3,7 +3,7 @@ import Tabl from "../components/data/data"
 
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
-import Collapselogement from "../components/collapse-logement/collapse-logement";
+import Collapselogement from "../components/collapse/collapse";
 import Tag from "../components/tag/tag";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -38,9 +38,9 @@ function Logement(){
   return (
     <>
         <Header/>
-        <div>
+        <section>
           <Carrousel/>
-          <div className="logement">
+          <section className="logement">
             <div>
               <div >
                 <h1 className="logement__titre">{cardData.title}</h1>
@@ -54,7 +54,7 @@ function Logement(){
             </div>
             <div className="logement-host">
               <div className="logement-host__info">
-                <h2 >{hostData.name}</h2>
+                <h2 className="logement-host__nom">{hostData.name}</h2>
                 <img src={hostData.picture} alt={hostData.name} className="logement-host__image"/>
                 
               </div>
@@ -62,13 +62,13 @@ function Logement(){
                 <Rating stars={cardData.rating} />
               </div>
             </div>
-          </div>
-          <div className="logement__collapse">
+          </section>
+          <section className="logement__collapse">
              <Collapselogement titre='Description' contenu={[cardData.description]}/>
              <Collapselogement titre='Équipement' contenu={cardData.equipments}/>
             {/* <Rating stars="4" /> */}
-          </div>
-        </div>
+          </section>
+        </section>
         <Footer/>
     </>
   )

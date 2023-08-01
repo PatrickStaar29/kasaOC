@@ -1,3 +1,25 @@
-.test{
-    color: red;
+body{
+    display: flex;
+    max-width: 1440px;
+    flex-direction: column;
+    align-items: stretch;
+    margin: auto;
 }
+
+#root{
+	margin: 0 100px;
+}
+
+@media screen and (max-width: 768px) {
+    #root{
+        margin: 0 20px;
+    }
+
+    body{
+        display: flex;
+        max-width: 768px;
+        flex-direction: column;
+        align-items: stretch;
+        margin: auto;
+    }
+  }

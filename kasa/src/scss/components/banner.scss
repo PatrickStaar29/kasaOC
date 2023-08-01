@@ -8,7 +8,7 @@
         object-fit: cover;
     }
     &__filtre{
-        height: 223px;
+        height: 100%;
         width: 100%;
         border-radius: 25px;
         position: absolute;
@@ -25,5 +25,21 @@
         color: #fff;
         font-family: 'Montserrat';
         font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner{
+        &__image{
+            height: 111px;
+            border-radius: 10px;
+        }
+        &__filtre{
+            border-radius: 10px;
+        }
+        &__text{
+            font-size: 24px;
+            margin-left: 16px;
+        }
     }
 }

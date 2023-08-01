@@ -23,7 +23,7 @@ function Carrousel() {
     const shouldHideIcon = cardData.pictures.length <= 1; // Vérifier si nous avons 1 image ou moins
 
     return (
-        <div className="carrousel">
+        <section className="carrousel">
             <img src={cardData.pictures[currentPicture]} alt="" className="carrousel__banner" />
             {/* Afficher ou masquer l'icône en fonction du nombre d'images */}
             {!shouldHideIcon && (
@@ -32,7 +32,7 @@ function Carrousel() {
                     <FontAwesomeIcon icon={faChevronRight} className="carrousel__right" onClick={handleRightArrowClick} />
                 </div>
             )}
-        </div>
+        </section>
     );
 }
 

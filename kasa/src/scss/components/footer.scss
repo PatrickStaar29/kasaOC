@@ -12,9 +12,20 @@
         height: 40px;
         width: 122px;
     }
-    &_texte{
+    &__texte{
         font-weight: 500;
         line-height: 142.6%;
         color: white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        gap: 15px;
+        &__texte{
+            font-size: 12px;
+            width: 130px;
+            text-align: center;
+        }
     }
 }

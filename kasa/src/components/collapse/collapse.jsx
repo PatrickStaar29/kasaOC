@@ -1,21 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-const CollapseItem = ({ title, content }) => {
+function Collapse({ titre, contenu }) {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const toggleCollapse = () => {
-    setIsCollapsed(!isCollapsed)
-  }
+    setIsCollapsed(!isCollapsed);
+  };
 
   return (
-    <div className='collapse'>
-      <div className='collapse__titre' onClick={toggleCollapse}>
-        <h2 >{title}</h2>
-        <span>v</span>
+    <div className={`collapse ${isCollapsed ? "" : "open"}`}>
+      <div className="collapse__titre" onClick={toggleCollapse}>
+        <h2>{titre}</h2>
+        <FontAwesomeIcon
+          icon={faChevronUp}
+          className={`icon ${isCollapsed ? "" : "rotate"}`}
+        />
       </div>
-      {!isCollapsed && <h3 className='collapse__contenu'>{content}</h3>}
+      <div
+        className="collapse__contenu"
+        style={{
+          animation: isCollapsed ? "" : "loadContent 0.5s ease-in-out",
+          maxHeight: isCollapsed ? "0" : "999px",
+        }}
+      >
+        {contenu.map((contenu, index) => (
+          <h3 key={index}>{contenu}</h3>
+        ))}
+      </div>
     </div>
   );
-};
+}
 
-export default CollapseItem;
+export default Collapse;

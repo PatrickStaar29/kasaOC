@@ -27,3 +27,23 @@
         font-family: 'Montserrat';
     }
 }
+
+@media screen and (max-width: 768px) {
+    .Probl{
+        margin: 113px 0;
+        gap: 113px;
+        &__404{
+            font-size: 96px;
+            height: auto;
+        }
+        &__message{
+            font-size: 18px;
+            text-align: center;
+            width: 260px;
+        }
+        &__retour{
+            font-size: 14px;
+        }
+    }
+    
+}

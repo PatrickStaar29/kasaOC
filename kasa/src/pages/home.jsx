@@ -11,7 +11,6 @@ import Tabl from "../components/data/data"
 function Home(){
     return (
         <>
-        {/* <section className="body"> */}
             <Header /> 
             <main>
                 <Banner image={Imagebanner} text="Chez vous, partout et ailleurs"/>
@@ -22,7 +21,6 @@ function Home(){
                 </section>
             </main>
             <Footer />
-        {/* </section> */}
         </>
     )
 }

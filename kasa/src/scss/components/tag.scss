@@ -14,3 +14,15 @@
         border-radius: 10px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .tag{
+        margin: 10px 0;
+        &__titre{
+            font-size: 10px;
+            height: 18px;
+            padding: 0 20px;
+            border-radius: 5px;
+        }
+    }
+}
