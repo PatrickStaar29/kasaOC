@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 50px;
     column-gap: 60px;
-    background: #f6f6f6;
+    background: $gris-clair;
     border-radius: 25px;
     margin: 43px 0 50px 0;
     padding: 56px 50px 43px 50px;
@@ -30,7 +30,7 @@
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
     }
     &__texte{
-        color: #f6f6f6;
+        color: $gris-clair;
         margin: 20px;
         font-family: 'Montserrat';
         position: absolute;

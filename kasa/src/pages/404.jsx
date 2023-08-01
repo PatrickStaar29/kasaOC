@@ -1,4 +1,3 @@
-// Import de chaque composant dont tu as besoin
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
 import Probl from "../components/404/probl"

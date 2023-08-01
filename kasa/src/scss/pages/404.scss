@@ -12,16 +12,16 @@
         height: 263px;
         align-items: center;
         justify-content: center;
-        color: #FF6060;
+        color: $rouge-orange;
     }
     &__message{
         font-size: 36px;
         font-weight: 500;
         font-family: 'Montserrat';
-        color: #FF6060;
+        color: $rouge-orange;
     }
     &__retour{
-        color: #ff6060;
+        color: $rouge-orange;
         font-size: 18px;
         font-weight: 500;
         font-family: 'Montserrat';

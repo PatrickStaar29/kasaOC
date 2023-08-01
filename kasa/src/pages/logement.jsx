@@ -28,11 +28,11 @@ const Rating = ({ stars }) => {
 
 
 function Logement(){
-    const { id } = useParams(); // Récupérer l'ID à partir des paramètres d'URL
+    const { id } = useParams()
 
-  // Recherchez l'objet correspondant à l'ID dans le tableau Tabl
-  const cardData = Tabl.find((item) => item.id === id);
-  const hostData = Tabl.find(item => item.id === id)?.host;
+  
+  const cardData = Tabl.find((item) => item.id === id)
+  const hostData = Tabl.find(item => item.id === id)?.host
 
 
   return (
@@ -66,7 +66,6 @@ function Logement(){
           <section className="logement__collapse">
              <Collapselogement titre='Description' contenu={[cardData.description]}/>
              <Collapselogement titre='Équipement' contenu={cardData.equipments}/>
-            {/* <Rating stars="4" /> */}
           </section>
         </section>
         <Footer/>
