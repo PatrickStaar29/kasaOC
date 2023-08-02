@@ -1,17 +1,18 @@
 import { useParams } from "react-router-dom"
 import Tabl from "../components/data/data"
+import Error from "./404"
 
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
-import Collapselogement from "../components/collapse/collapse";
-import Tag from "../components/tag/tag";
+import Collapselogement from "../components/collapse/collapse"
+import Tag from "../components/tag/tag"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-import Carrousel from "../components/carrousel/carrousel";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+import Carrousel from "../components/carrousel/carrousel"
 
 const Rating = ({ stars }) => {
-  const maxStars = 5;
+  const maxStars = 5
   return (
     <div className="logement-host__star">
       {[...Array(maxStars)].map((_, index) => (
@@ -34,11 +35,16 @@ function Logement(){
   const cardData = Tabl.find((item) => item.id === id)
   const hostData = Tabl.find(item => item.id === id)?.host
 
+  const error = Tabl.find(item => item.id === (id))
+
+  if (!error) {
+    return <Error />
+  }
 
   return (
     <>
         <Header/>
-        <section>
+        <main>
           <Carrousel/>
           <section className="logement">
             <div>
@@ -67,7 +73,7 @@ function Logement(){
              <Collapselogement titre='Description' contenu={[cardData.description]}/>
              <Collapselogement titre='Équipement' contenu={cardData.equipments}/>
           </section>
-        </section>
+        </main>
         <Footer/>
     </>
   )

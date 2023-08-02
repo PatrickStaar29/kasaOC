@@ -38,6 +38,18 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        column-gap: 40px;
+        padding: 35px 30px 35px 30px;
+        &__card{
+            height: 300px;
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     .grid {
         grid-template-columns: repeat(1, 1fr);

@@ -4,7 +4,7 @@ import Logo from './image/Logo.png'
 
 
 function Header() {
-    const location = useLocation();
+    const location = useLocation()
   
     return (
       <header className="header">

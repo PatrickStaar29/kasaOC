@@ -10,6 +10,12 @@ body{
 	margin: 0 100px;
 }
 
+@media screen and (max-width: 1024px) {
+    #root{
+        margin: 0 50px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #root{
         margin: 0 20px;

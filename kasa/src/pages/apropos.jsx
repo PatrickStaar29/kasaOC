@@ -39,7 +39,9 @@ function Apropos(){
         <>
             <Header />
             <main>
-                <Banner image={Imagebanner}/>
+                <section className="banner-apropos">
+                    <Banner image={Imagebanner}/>
+                </section>
                 <section className="collapse__apropos">
                     <Collapse titre={data[0].titre} contenu={[data[0].texte]}/>
                     <Collapse titre={data[1].titre} contenu={[data[1].texte]}/>

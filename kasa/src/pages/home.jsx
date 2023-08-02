@@ -12,7 +12,9 @@ function Home(){
         <>
             <Header /> 
             <main>
-                <Banner image={Imagebanner} text="Chez vous, partout et ailleurs"/>
+                <section className="banner">
+                    <Banner image={Imagebanner} text="Chez vous, partout et ailleurs"/>
+                </section>
                 <section className="grid">
                     {Tabl.map((item) => (
                         <Card key={item.id} data={item} />

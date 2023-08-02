@@ -70,6 +70,13 @@
     }
   }
  
+  @media screen and (max-width: 1024px) {
+    .collapse__apropos{
+      margin: 40px 50px 40px 50px;
+    }
+  }
+
+
   @media screen and (max-width: 768px) {
     .collapse__apropos{
       margin: 20px 0;
@@ -80,6 +87,9 @@
         height: 30px;
         padding: 0 10px;
         font-size: 13px;
+      }
+      &__contenu{
+        font-size: 12px;
       }
     }
   }

@@ -31,8 +31,34 @@
         background: $rouge-orange;
         padding: 5px 10px;
         border-radius: 20px;
+    }
+    &__counter{
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        text-align: center;
+        color: white;
+        background: $rouge-orange;
+        padding: 5px 10px;
+        border-radius: 5px;
+        user-select: none;
     }    
 }
+
+@media screen and (max-width: 1024px) {
+    .carrousel{
+        height: 300px;
+        &__icon{
+            font-size: 60px;
+        }
+        &__counter{
+            bottom: 10px;
+            font-size: 14px;
+        }
+    }
+  }
 
 @media screen and (max-width: 768px) {
     .carrousel{
@@ -52,6 +78,10 @@
             right: 15px;
             padding: 5px;
             border-radius: 5px;
+        }
+        &__counter{
+            bottom: 12px;
+            font-size: 12px;
         }
     }
 
