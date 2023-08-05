@@ -23,7 +23,7 @@ function Carrousel() {
 
     return (
         <section className="carrousel">
-            <img src={cardData.pictures[currentPicture]} alt="" className="carrousel__banner" />
+            <img src={cardData.pictures[currentPicture]} alt={cardData.title} className="carrousel__banner" />
             {!shouldHideIcon && (
                 <div className="carrousel__icon">
                     <FontAwesomeIcon icon={faChevronLeft} className="carrousel__left" onClick={handleLeftArrowClick} />
@@ -32,7 +32,7 @@ function Carrousel() {
             )}
             <span className="carrousel__counter">{currentPicture + 1}/{totalPictures}</span>
         </section>
-    );
+    )
 }
 
 export default Carrousel;

@@ -22,7 +22,7 @@ function Collapse({ titre, contenu }) {
         className="collapse__contenu"
         style={{
           animation: isCollapsed ? "" : "loadContent 0.5s ease-in-out",
-          maxHeight: isCollapsed ? "0" : "999px",
+          maxHeight: isCollapsed ? "0" : "100%"
         }}
       >
         {contenu.map((contenu, index) => (
@@ -33,4 +33,4 @@ function Collapse({ titre, contenu }) {
   );
 }
 
-export default Collapse;
+export default Collapse
