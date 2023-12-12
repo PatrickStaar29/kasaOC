@@ -1,7 +1,7 @@
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
 import Banner from "../components/banner/banner"
-import Imagebanner from "../components/banner/bannerimg/Home.png"
+import Imagebanner from "/image/bannerimg/Home.png"
 import Card from "../components/card/card"
 import Tabl from "../components/data/data"
 

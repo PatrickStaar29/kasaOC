@@ -2,7 +2,7 @@ import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
 import Collapse from "../components/collapse/collapse"
 import Banner from "../components/banner/banner"
-import Imagebanner from "../components/banner/bannerimg/apropos.png"
+import Imagebanner from "/image/bannerimg/apropos.png"
 
 function Apropos(){
     const data = [
